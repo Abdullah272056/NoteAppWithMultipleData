@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_notes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_expandDirection="up"
+            app:fab_labelStyle="@style/LabelStyle"
+            app:fab_addButtonSize="normal"
+            app:fab_labelsPosition="left"
+            android:layout_alignParentRight="true">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#0E0E0E"
+                app:fab_size="mini"
+                app:fab_title="Voice"
+                android:id="@+id/f_btn_addVoice"
+                app:fab_icon="@drawable/ic_baseline_keyboard_voice_24"
+
+                />
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#0E0E0E"
+                app:fab_size="mini"
+                app:fab_title="Pdf"
+                android:id="@+id/f_btn_addPdf"
+                app:fab_icon="@drawable/ic_baseline_picture_as_pdf_24"
+
+                />
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#0E0E0E"
+                app:fab_size="mini"
+                app:fab_title="Image"
+                android:id="@+id/f_btn_addImage"
+                app:fab_icon="@drawable/ic_baseline_image_24"
+
+                />
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    </RelativeLayout>
+
+</LinearLayout>
